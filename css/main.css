@@ -1,0 +1,47 @@
+/* General Styles */
+
+.hidden {
+    display: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: beige;
+}
+  
+/* General Rules */
+  
+img embed, object, video, picture {
+    max-width: 100%;
+}
+  
+p, h1, h2, h3, h4, h5 {
+    line-height: 30px;  
+}
+  
+h2 {
+    text-align: center;
+    font-size: 30px;
+    letter-spacing: -2px;
+    text-shadow: 0px 3px #fff;
+    margin-bottom: 15px;
+    color: #f5cbcb;
+}
+
+/* Competition Backdrop */
+
+.background {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    margin: 0px 5px;
+    position: relative;
+}
+
+#background {
+    box-sizing: border-box;
+    border-radius: 10px;
+    width: 100%;
+    border: 5px solid #f27c1b;
+    position: relative;
+}
