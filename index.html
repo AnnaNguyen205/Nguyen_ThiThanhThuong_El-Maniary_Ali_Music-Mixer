@@ -9,21 +9,77 @@
 </head>
 <body>
     <header>
-        <h1 class="hidden">Animal Music Competition</h1>
+        <h1>Animal Music Competition</h1>
     </header>
 
     <div class="grid-con">
 
         <!-- Competition Backdrop -->
            
-            <h2 class="hidden">Competition Backdrop</h2>
-            <div class="background col-span-full m-col-span-full l-col-start-1 l-col-end-11">
-                <img id="background" src="images/background-musicmixer.jpeg" alt="Animal Music Competition Background">
+        <h2 class="hidden">Competition Backdrop</h2>
+        <div class="background col-span-full m-col-span-full l-col-start-1 l-col-end-11">
+            <img id="background" src="images/background-musicmixer.jpeg" alt="Animal Music Competition Background">
+            <div class="drop-zone"></div>
+        </div>
+
+        <!-- Audio -->
+
+        <audio id="audio1" class="audio-player" data-trackref="brownie" loop></audio>
+        <audio id="audio2" class="audio-player" data-trackref="golden" loop></audio>
+        <audio id="audio3" class="audio-player" data-trackref="angryowl" loop></audio>
+        <audio id="audio4" class="audio-player" data-trackref="greenie" loop></audio>
+
+        <!-- Drag-n-Drop Images -->
+
+        <h2 class="col-span-full">Drag and Drop Birds into the Stage</h2>
+
+        <div class="images col-span-full m-col-span-full l-col-start-1 l-col-end-11">
+
+
+            <div class="image-con" id="con-1" data-trackref="brownie">
+                <img id="brownie" src="images/brownie.svg" alt="Brownie" data-trackref="brownie" draggable="true">
+            </div>
+            <div class="image-con" id="con-2" data-trackref="golden">
+                <img id="golden" src="images/golden.svg" alt="Golden" data-trackref="golden" draggable="true">
+            </div>
+            <div class="image-con" id="con-3" data-trackref="angryowl">
+                <img id="angryowl" src="images/angryowl.svg" alt="Angry Owl" data-trackref="angryowl" draggable="true">
+            </div>
+            <div class="image-con" id="con-4" data-trackref="greenie">
+                <img id="greenie" src="images/greenie.svg" alt="Greenie" data-trackref="greenie" draggable="true">
             </div>
 
+        </div>
+
+        <!-- Music Mixer Controller -->
+
+        <section class="controller col-span-full m-col-span-full l-col-start-11 l-col-end-13">
+
+        <h2 class="hidden">Music Mixer</h2>
+    
+        
+        <div id="controls-wrapper">
+            <div id="controller-con">
+                <img class="controls" id="playButton" src="images/play-button.svg" alt="Play Button">
+                <img class="controls" id="pauseButton" src="images/pause-button.svg" alt="Pause Button">
+                <img class="controls" id="refreshButton" src="images/refresh-button.png" alt="Replay Button">
+            </div>
+
+            <div id="slider-con">
+                <input id="slider" type="range" min="0" max="100" step="1"> 
+            </div>
+        </div>
+            
+        </section>
     </div>
 
-        
+
+    <!-- FOOTER -->
+
+    <footer >
+        <p>By Anna & Leo</p>
+        <p>Copyright &copy; Music Mixer Official.</p>
+    </footer>
 
     <script src="js/main.js"></script>
 </body>
