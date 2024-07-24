@@ -18,15 +18,35 @@ img embed, object, video, picture {
   
 p, h1, h2, h3, h4, h5 {
     line-height: 30px;  
+    font-family:'Courier New', Courier, monospace;
 }
   
 h2 {
     text-align: center;
-    font-size: 30px;
+    font-size: 25px;
     letter-spacing: -2px;
     text-shadow: 0px 3px #fff;
     margin-bottom: 15px;
-    color: #f5cbcb;
+    color: #195146;
+}
+
+/* HEADER */
+
+header {
+    background: #195146;
+    height: 90px;
+    display: flex;
+}
+
+h1 {
+    margin: 0 auto;
+    font-size: 30px;
+    color: white;
+    display: flex;
+    text-align: center;
+    text-transform: uppercase;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Competition Backdrop */
@@ -44,4 +64,388 @@ h2 {
     width: 100%;
     border: 5px solid #f27c1b;
     position: relative;
+}
+
+.drop-zone {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+
+
+/* Styling for Dropped Images */
+
+.drop-zone img {
+    width: auto;
+    height: auto;
+    position: absolute;
+    z-index: 2;
+}
+
+.drop-zone #brownie {
+    height: 10%;
+    left: 9%;
+    top: 72%;
+}
+
+.drop-zone #golden {
+    height: 10%;
+    left: 30%;
+    top: 15%;
+}
+
+.drop-zone #angryowl {
+    height: 15%;
+    left: 30%;
+    top: 74%;
+}
+
+.drop-zone #greenie {
+    height: 10%;
+    left: 60%;
+    top: 79%;
+}
+
+/* Drag-n-Drop Images */
+
+.images {
+    margin: 10px 5px;
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.images img {
+    max-height: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.image-con {
+    background-color: #195146;
+    border-radius: 10px;
+    border: 5px solid #f27c1b;
+    width: 170px;
+    height: 170px;
+    padding: 10px;
+    box-sizing: border-box;
+    display: inline-flex;
+    margin-bottom: 10px;
+}
+
+.image-con:hover {
+    border: 6px solid #195146;
+    background-color: #f27c1b;
+    transition: ease-in-out .1s;
+}
+
+/* Music Mixer Controller */
+
+.controller {
+    background-color: #195146;
+    border-radius: 10px;
+    border: 5px solid #f27c1b;
+    box-sizing: border-box;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    margin: 15px 5px;
+    padding: 10px; 
+    position: relative;
+}
+
+.controller h2 {
+    font-size: 14px;
+    margin-left: 5px;
+    margin-right: 10px;
+}
+
+.controller h3 {
+    display: none;
+}
+
+.controller img {
+    height: 15px;
+    width: 15px;
+    background-color:#f27c1b;
+    padding: 8px;
+    border-radius: 10px;  
+    margin-left: 2px;
+    margin-right: 0px;
+    margin-top: 4px;
+}
+
+.controller img:hover {
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.25);
+}
+
+.controller img:active {
+    transform: translateY(1px);
+}
+
+#controls-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+#controller-con {
+    margin-left: 0px;
+    margin-top: 0px;  
+}
+
+/* Slider Container */
+
+#slider-con {
+    height: 10px;
+    width: 100px;
+    background-color: #f27c1b;
+    padding: 10px;
+    border-radius: 10px;  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+}
+
+#slider {
+    width: 100px;
+}
+
+/* FOOTER */
+
+footer {
+    background: #195146;
+    height: 90px;
+    margin-top: auto;
+    width: 100%;
+}
+
+footer p {
+    text-align: center; 
+    color: white;
+    font-size: 12px;
+}
+
+@media screen and (min-width: 500px) { 
+
+    .controller h3 {
+        display: block;
+        font-size: 14px;
+        margin-left: 5px;
+    }
+}
+
+/* Tablet Styling */
+
+@media screen and (min-width: 768px) { 
+
+    h1 {
+        font-size: 35px;
+    }
+
+    .background {
+        margin: 0px 10px;
+    }
+
+    .drop-zone #brownie {
+        left: 8.5%;
+        top: 74%;
+    }
+    
+    .drop-zone #golden {
+        left: 30%;
+        top: 15%;
+    }
+    
+    .drop-zone #angryowl {
+        left: 30%;
+        top: 76%;
+    }
+    
+    .drop-zone #greenie {
+        left: 60%;
+        top: 81%;
+    }
+    
+    .images {
+        margin: 15px 10px;
+    }
+
+    .image-con {
+        width: 175px;
+        height: 175px;
+        margin-bottom: 0px;
+    }
+
+    .controller {
+        margin: 20px 10px;
+        padding: 20px;
+    }
+
+    .controller h2 {
+        font-size: 20px;
+        margin-left: 20px;
+        position: absolute;
+        left: 10px;
+    }
+    
+    .controller h3 {
+        display: block;
+        font-size: 20px;
+        padding: 0px 20px;
+        position: absolute;
+        right: 10px;
+    }
+
+    .controller img {
+        height: 20px;
+        width: 20px;
+        padding: 10px;
+    }
+
+    #controller-con {
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+    
+    #slider-con {
+        width: 160px;
+        padding: 15px;
+    }
+
+    #slider {
+        width: 150px;
+    }
+
+    /* FOOTER */
+
+    footer p {
+        font-size: 14px;
+    }
+    
+}
+
+
+/* Desktop Styling */
+
+@media screen and (min-width: 1200px) { 
+
+    header {
+        height: 125px;
+    }
+    
+    h1 {
+        font-size: 45px;
+    }
+
+    .background {
+        margin-left: 60px;
+        margin-right: 20px;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    
+    #background {
+        margin-top: 40px;
+        margin-bottom: 15px;
+    }
+
+    .drop-zone #brownie {
+        left: 8%;
+        top: 73%;
+    }
+    
+    .drop-zone #golden {
+        left: 30%;
+        top: 20%;
+    }
+    
+    .drop-zone #angryowl {
+        left: 30%;
+        top: 74%;
+    }
+    
+    .drop-zone #greenie {
+        left: 60%;
+        top: 79%;
+    }
+
+    .images {
+        margin-left: 60px;
+        margin-top: 0px;
+        margin-bottom: 40px;
+        margin-right: 20px;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+    
+    .image-con {
+        width: 200px;
+        height: 200px;
+    }
+    
+    .controller {
+        flex-direction: column;
+        grid-row-start: 1;
+        grid-row-end: 3;
+        margin: 40px 60px 40px -30px;
+    }
+    
+    .controller h2 {
+        font-size: 22px;
+        position: absolute; 
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        top: 20px;
+    }
+    
+    .controller h3 {
+        font-size: 22px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        position: absolute;
+        bottom: 20px;
+    }
+    
+    .controller img {
+        height: 20px;
+        width: 20px;
+        margin-top: 5px;
+        margin-left: 0px;
+        display: flex;
+    }
+
+    #controls-wrapper {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+    }
+    
+    #slider-con {
+        height: 157px;
+        width: 20px;
+        padding: 10px;
+        margin-top: 5px;
+    }
+
+    #slider {
+        width: 147px;
+        transform: rotate(270deg);
+    }
+ 
 }
