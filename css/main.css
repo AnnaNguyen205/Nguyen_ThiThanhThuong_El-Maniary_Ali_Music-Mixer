@@ -86,27 +86,34 @@ h1 {
 }
 
 .drop-zone #brownie {
-    height: 10%;
+    height: 25%;
     left: 9%;
-    top: 72%;
+    top: 15%;
+    padding-bottom: 40px;
+    margin-bottom: 40px;
 }
 
 .drop-zone #golden {
-    height: 10%;
+    height: 25%;
     left: 30%;
     top: 15%;
+    padding-top: -250px;
+    margin-top: -75px;
 }
 
 .drop-zone #angryowl {
-    height: 15%;
-    left: 30%;
+    height: 22%;
+    right: -30%;
     top: 74%;
+    margin-left: 300px;
 }
 
 .drop-zone #greenie {
-    height: 10%;
+    height: 27%;
     left: 60%;
     top: 79%;
+    margin-left: 200px;
+    margin-top: -200px;
 }
 
 /* Drag-n-Drop Images */
