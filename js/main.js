@@ -25,6 +25,7 @@
 	}
 	
 	function playAudio() {
+		console.log('Play');
 		
 		const droppedImages = dropZone.querySelectorAll('img[data-trackref]');
 		
@@ -35,7 +36,7 @@
 	}
 	
 	function pauseAudio() {
-	
+	console.log('Pause');
 		theAudio.forEach(audio => {
 			audio.pause();
 		});
@@ -51,6 +52,7 @@
 	}
 		
 	function refreshPieces() {
+		console.log('Refresh');
 		
 		theAudio.forEach(audio => {
 			audio.pause();
