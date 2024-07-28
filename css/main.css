@@ -86,34 +86,27 @@ h1 {
 }
 
 .drop-zone #brownie {
-    height: 25%;
-    left: 9%;
+    height: 35%;
+    left: 10%;
     top: 15%;
-    padding-bottom: 40px;
-    margin-bottom: 40px;
 }
 
 .drop-zone #golden {
-    height: 25%;
-    left: 30%;
+    height: 35%;
+    right: 10%;
     top: 15%;
-    padding-top: -250px;
-    margin-top: -75px;
 }
 
 .drop-zone #angryowl {
-    height: 22%;
-    right: -30%;
-    top: 74%;
-    margin-left: 300px;
+    height: 35%;
+    left: 10%;
+    bottom: 15%;
 }
 
 .drop-zone #greenie {
-    height: 27%;
-    left: 60%;
-    top: 79%;
-    margin-left: 200px;
-    margin-top: -200px;
+    height: 35%;
+    right: 10%;
+    bottom: 15%;
 }
 
 /* Drag-n-Drop Images */
@@ -264,26 +257,6 @@ footer p {
     .background {
         margin: 0px 10px;
     }
-
-    .drop-zone #brownie {
-        left: 8.5%;
-        top: 74%;
-    }
-    
-    .drop-zone #golden {
-        left: 30%;
-        top: 15%;
-    }
-    
-    .drop-zone #angryowl {
-        left: 30%;
-        top: 76%;
-    }
-    
-    .drop-zone #greenie {
-        left: 60%;
-        top: 81%;
-    }
     
     .images {
         margin: 15px 10px;
@@ -366,26 +339,6 @@ footer p {
     #background {
         margin-top: 40px;
         margin-bottom: 15px;
-    }
-
-    .drop-zone #brownie {
-        left: 8%;
-        top: 73%;
-    }
-    
-    .drop-zone #golden {
-        left: 30%;
-        top: 20%;
-    }
-    
-    .drop-zone #angryowl {
-        left: 30%;
-        top: 74%;
-    }
-    
-    .drop-zone #greenie {
-        left: 60%;
-        top: 79%;
     }
 
     .images {
